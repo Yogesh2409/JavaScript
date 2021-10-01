@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Date & Time</title>
+    <style>
+        .container{
+            font-size: 35px;
+            border: 2px solid black;
+            background-color: blanchedalmond;
+            padding: 34px;
+            margin: 4px;
+            text-align: center;
+        }
+        #time{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Current time is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is date and time");
+        let date = new Date();
+        // let date = new Date(5000);      //Date(milliseconds) from Reference Thu Jan 01 1970 05:30:05 GMT+0530 (India Standard Time)
+        // let date = new Date("2022-09-24");  // Date Initialisation
+        // let date = new Date(year,month,date,hours,minutes,seconds);
+        // let date = new Date(2021,9,24,12,0,0);
+
+        // Set Date Function
+
+        // date.setMonth(8);
+        // date.setDate(23);
+        // date.setHours(23);
+        // date.setMinutes(59);
+        // date.setSeconds(59);
+        // console.log(date);
+
+        // Get Date Function
+
+        // let year = date.getFullYear();
+        // console.log("The year is ", year);
+
+        // let month = date.getMonth();
+        // console.log("The month is ", month);
+
+        // let dt = date.getDate();
+        // console.log("The date is ", dt);
+
+        // let hours = date.getHours();
+        // console.log("The hours is ", hours);
+
+        // let minutes = date.getMinutes();
+        // console.log("The minutes is ", minutes);
+
+        // let seconds = date.getSeconds();
+        // console.log("The seconds is ", seconds);
+
+        setInterval(displayTime, 1000);
+
+        function displayTime(){
+            time = document.getElementById("time");
+            time.innerHTML = new Date();
+        }
+
+
+    </script>
+</body>
+</html>

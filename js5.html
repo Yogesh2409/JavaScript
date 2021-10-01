@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Conditionals</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+        </ul>
+    </div>
+    <script>
+        // var string = "This is a string";
+        // var string = "This is string2";
+        // console.log(string);
+        let a = 5;
+        {
+            let a = 9;
+            console.log(a);
+        }
+        console.log(a);
+        const b = "This string cannot be changed";
+        // b = "I want to change this string";
+        let age = 17;
+        if (age>18){
+            console.log("You are allowed to drink");
+        }
+        else if (age==18 || age==17){
+            console.log("Wait for one year");
+        }
+        else{
+            console.log("You are not allowed to drink");
+        }
+        const cups = 40;
+        switch (cups) {
+            case 4:
+                console.log("Cups are 4");
+                break;
+            case 5:
+                console.log("Cups are 5");
+                break;
+            case 6:
+                console.log("Cups are 6");
+                break;
+            case 40:
+                console.log("Cups are 40");
+                break;
+            default:
+                console.log("Case not found");
+                break;
+        }
+
+    </script>
+</body>
+</html>

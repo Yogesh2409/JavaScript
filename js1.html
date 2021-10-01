@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <p>There is row in this container</p>
+        </div>
+    </div>
+    <script>
+        console.log('Hello World');
+        document.write('Hello World');
+        var a = 1;
+        var b = 6;
+        console.log(a+b);
+        document.write("<br>")
+        document.writeln("Sum is " + (a+b))
+        i = 0;
+        while(i<10) {
+            document.write("<br>")
+            document.write(++a)
+            i = i + 1;
+        }
+        const c = 3;
+        switch (c) {
+            case 1:
+                console.log("Case 1 executed")
+                break;
+            case 2:
+                console.log("Case 2 executed")
+                break;
+            default:
+                console.log("Try again")
+        }
+        // const detail;
+        details = {name:"Yogesh", age:"19", surname:"Jain"};
+        for(const detail in details){
+            document.write("<br>")
+            document.write(`${detail} : ${details[detail]}`);
+        }
+    </script>
+</body>
+</html>

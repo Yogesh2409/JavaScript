@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | String Functions</title>
+</head>
+<body>
+    <script>
+        // String Functions
+        // 1. indexOf()
+        // 2. lastIndexOf()
+        // 3. slice, substring, substr
+        // 4. toUppercase(), toLowercase()
+        // 5. replace()
+        // 6. concat()
+        // 7. trim()   Eliminates white spaces within the string
+        // 8. charAt()
+        // 9. charCodeAt()
+
+        var str = "Yogesh is a good boy";
+        console.log(str.indexOf("g"));
+        console.log(str.lastIndexOf('g'));
+        console.log(str.slice(1,-1));
+        console.log(str.substring(1,4));
+        console.log(str.substr(0,6));
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        console.log(str.replace("Yogesh" , "Priyanshu"));
+        console.log(str.concat("."));
+        var string = "          this contains         whitespaces      ";
+        console.log(string);
+        console.log(string.trim());
+        console.log(str.charAt(0));
+        console.log(str.charCodeAt(0));
+
+    </script>
+</body>
+</html>
